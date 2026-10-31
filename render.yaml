@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: ai-phone-line-gemini-live
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: GEMINI_API_KEYS
+        sync: false
+      - key: GEMINI_LIVE_MODEL
+        value: gemini-3.8-live
+      - key: YEMOT_API_USERNAME
+        sync: false
+      - key: YEMOT_API_PASSWORD
+        sync: false
+      - key: YEMOT_API_KEY
+        sync: false
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: YEMOT_AI_EXTENSION
+        value: /1
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: ENABLE_GOOGLE_SEARCH
+        value: "true"
+      - key: REQUEST_TIMEOUT_MS
+        value: "30000"

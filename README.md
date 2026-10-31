@@ -1,0 +1,1 @@
+# AI Phone Line — Gemini 3.8 Live\n\nYemot recording -> raw PCM conversion -> Gemini 3.8 Live -> output transcription -> Yemot TTS.\n\nThe caller audio is sent directly by the server to Gemini Live API. Supabase conversation persistence and a dashboard API are included. Secrets are environment variables only.\n

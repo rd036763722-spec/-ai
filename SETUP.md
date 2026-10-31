@@ -1,0 +1,1 @@
+# Setup\n\nSet the Gemini, Yemot, Render and optional Supabase values as Render environment variables. The default Live model is `gemini-3.8-live`. Yemot extension defaults to `/9`. The server converts WAV recordings to raw 16-bit PCM 16kHz mono before sending them to Live API.\n
